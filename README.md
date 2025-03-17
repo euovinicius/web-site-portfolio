@@ -9,4 +9,6 @@
 - Criação do Modelo de *Machine Learning* (*Random Forest*, Avaliação de Métricas)
 - Colocando em Produção (Flask)
 
-- ![image](https://github.com/user-attachments/assets/9dc9635a-def6-426d-b5c1-96fe6778a113)
+
+
+  ![image](https://github.com/user-attachments/assets/9dc9635a-def6-426d-b5c1-96fe6778a113)
