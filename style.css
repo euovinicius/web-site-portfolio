@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.5;
+  }
+  
+  /* Container padrão para limitar largura e centralizar */
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* ------------------------------ */
+  /* Header e Navegação */
+  /* ------------------------------ */
+  .header {
+    background-color: #000; /* Mantém o fundo preto */
+    padding: 20px 0;
+    
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: 900;
+  color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #fff;
+  }
+  
+  .btn-contato {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn-contato:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  /* ------------------------------ */
+  /* Hero Section */
+  /* ------------------------------ */
+  .hero-section {
+    padding: 130px 0  200px;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center;      /* Centraliza o texto */
+  }
+  
+  
+  /* Texto */
+  .hero-text {
+    flex: 1 1 500px;
+    margin-right: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  
+  
+  .subtitle { 
+    font-size: 5rem;
+    background: linear-gradient(90deg, #e6007e, #9f00c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+    margin-bottom: 30px;
+  }
+  
+  /* Botão principal */
+  .btn-cta {
+    display: inline-block;
+  font-size: 5rem; /* Tamanho maior */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+  
+  .btn-cta:hover {
+    transform: translateY(5px);
+  }
+  
+  
+  /* ------------------------------ */
+  /* Footer */
+  /* ------------------------------ */
+  .footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #000;
+    color: #666;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* ------------------------------ */
+  /* Seção de Projetos Selecionados */
+  /* ------------------------------ */
+  .featured-projects {
+    background-color: rgb(3, 3, 3); /* Ajuste conforme a cor desejada */
+    color: #f9f9f9;
+    padding: 60px 0; /* Espaçamento vertical */
+  }
+  
+  .featured-projects .container {
+    /* já definido no container global */
+  }
+  
+  /* Título da seção */
+  .featured-projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  /* Aplique o gradiente na palavra “Projetos” */
+  .featured-projects .gradient-text {
+    background: linear-gradient(90deg, #e6007e, #9f00c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Texto introdutório */
+  .projects-intro {
+    max-width: 600px;
+    margin-bottom: 40px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Grid de cards */
+  .projects-list {
+    display: grid;
+    /* 
+       'auto-fit' ou 'auto-fill' permite que o grid crie 
+       quantas colunas couberem no espaço disponível.
+       Ajuste minmax(300px, 1fr) se quiser um tamanho mínimo maior ou menor.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /* Espaçamento entre os cards */
+  }
+  
+  /* Cada card */
+  .project-card {
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    /* Remova a largura fixa (width: 60%) para deixar o grid controlar */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Imagem do card */
+  .project-img {
+    margin-bottom: 1rem;
+  }
+  
+  .project-img img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  
+  
+  /* Título do projeto */
+  .project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+  }
+  
+  /* Informações extras (localização, tecnologia) */
+  .project-info {
+    font-size: 0.9rem;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  /* Botão “Ver Projeto” */
+  .btn-project {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .btn-project:hover {
+    background: #ddd;
+  }
+  
+  /* ------------------------------ */
+  /* Seção Sobre mim */
+  /* ------------------------------ */
+  .sobre-mim {
+    background-color: rgb(245, 245, 245); /* Fundo escuro (ajuste se necessário) */
+    color: #fff;
+    padding: 132px 0; /* Espaçamento vertical */
+  }
+  
+  .sobre-mim .container {
+    /* Se já tiver um .container global, não precisa repetir. */
+  }
+  
+  .sobre-mim-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar em telas menores */
+    align-items: center;
+    gap: 5rem;
+  }
+  
+  .sobre-mim-image img {
+    max-width: 400px;
+    border-radius: 8px; /* Canto arredondado */
+    display: block;
+  }
+  
+  /* Texto da seção */
+  .sobre-mim-text {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+    min-width: 280px;
+  }
+  
+  .sobre-mim-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000; /* Verde destaque, ajuste conforme o design */
+  }
+  
+  .sobre-mim-text p {
+    line-height: 1.6;
+    color: #000; /* Texto cinza claro */
+  }
+  
+  /* ------------------------------ */
+  /* Seção Conhecimentos */
+  /* ------------------------------ */
+  .conhecimentos {
+    background-color: #f9f9f9; /* Fundo escuro */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .conhecimentos h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #000; /* Verde de destaque, ajuste se quiser */
+  }
+  
+  .cards-conhecimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #111; /* Tom de preto mais claro para destacar o card */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-card {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.4;
+  }
+  
+  /* ------------------------------ */
+  /* Seção Fale comigo */
+  /* ------------------------------ */
+  .fale-comigo {
+    background-color: #000; /* Fundo escuro */
+    color: #fff;
+    padding: 60px 0;
+  }
+  
+  .fale-comigo-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .fale-comigo-text {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .fale-comigo-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ff7f;
+  }
+  
+  .fale-comigo-text p {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .contact-list {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .contact-list li {
+    margin-bottom: 8px;
+    color: #ccc;
+  }
+  
+  .contact-list strong {
+    color: #fff;
+  }
+  
+  .btn-whatsapp {
+    display: inline-block;
+    background: #00ff7f;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .btn-whatsapp:hover {
+    background: #00e673;
+  }
+  
+  .fale-comigo-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Configuração da imagem */
+  .fale-comigo-image img {
+    max-width: 100px;
+    border-radius: 8px;
+    margin-left: 300px;
+    animation: floatY 3s ease-in-out infinite; /* Aplica a animação */
+  }
+  
+  /* Animação de sobe e desce */
+  @keyframes floatY {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px); /* Move para baixo */
+    }
+  }
+  
+  /* ------------------------------ */
+  /* Rodapé */
+  /* ------------------------------ */
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-content p {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    filter: invert(100%); /* Para deixar ícone branco, se for preto */
+    transition: transform 0.3s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .linha-separadora {
+    width: 100%; /* Ajuste conforme necessário */
+    border-bottom: 1px solid #333; /* Cor e espessura da linha */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+  }
+  
+  /* -------------- Media Queries Responsivos -------------- */
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 100px 0 150px;
+    }
+  
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 2rem;
+    }
+  
+    .hero-image {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .notebook {
+      width: 300px;
+      top: 80px;
+    }
+  
+    .vidro {
+      width: 290px;
+    }
+  
+    .sobre-mim-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .sobre-mim-image img {
+      max-width: 100%;
+    }
+  
+    .fale-comigo-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .fale-comigo-image img {
+      margin-left: 0;
+      max-width: 80px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section {
+      padding: 80px 0 120px;
+    }
+  
+    .hero-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    .subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .btn-cta {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .nav-links {
+      gap: 0.5rem;
+    }
+  
+    .hero-image {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .notebook {
+      width: 250px;
+      top: 60px;
+    }
+  
+    .vidro {
+      width: 240px;
+    }
+  
+    .cards-conhecimentos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myfolio - Designer Digital</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonte Externa (opcional) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Cabeçalho com navegação -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+            <a > Meu Portifolio</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#sobre-mim">Sobre mim</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#conhecimentos">Conhecimentos</a></li>
+          <li><a href="#contato">fale comigo</a></li>
+        </ul>
+        <div class="social-icons">
+            <!-- Substitua pelos links e ícones reais -->
+            
+            <a href="https://www.instagram.com/euovinicin" target="insta">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+                alt="Ícone do Instagram"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/vinicius-almeida-b06729216/" target="Linkedin">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+                alt="Ícone do LinkedIn"
+              />
+            </a>
+            <a href="https://github.com/euovinicius" target="github">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Ícone do GitHub" />
+            </a>
+          </div>
+      </nav>
+    </div>
+  </header>
+  <div class="linha-separadora"></div>
+  <!-- Seção principal (Hero) -->
+  <main class="hero-section" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        
+        <p class="subtitle">
+          <strong>Eu sou Vinicius,
+            Desenvolvedor Full Stack . </strong>
+        </p>
+        <a href="#sobre-mim" class="btn-cta"> <strong>&#x2193;</strong></a>
+      </div>
+      
+    </div>
+  </main>
+  <section class="sobre-mim" id="sobre-mim">
+    <div class="container">
+      <div class="sobre-mim-content">
+        <div class="sobre-mim-image">
+          <!-- Substitua pela sua imagem real -->
+          <img
+            src="1625603693830.jpg"
+            alt="Foto eu"
+          />
+        </div>
+        <div class="sobre-mim-text">
+          <h2>Sobre mim</h2>
+          <p>
+            Me chamo <strong>Vinicius Almeida</strong>, graduando no curso de
+            Graduando em Sistemas de Informação pela Una, atuo como desenvolvedor Back-end com foco em Python, Java e SQL, criando soluções robustas e eficientes. 
+            Além do desenvolvimento, tenho experiência em análise de dados, aplicando técnicas e ferramentas para extrair insights e otimizar processos. 
+            Minha trajetória inclui suporte técnico e desenvolvimento web, o que fortaleceu minhas habilidades analíticas e organizacionais. 
+            Estou sempre em busca de novos aprendizados e, atualmente, expandindo meus conhecimentos para o Front-end, com o objetivo de me tornar um 
+            desenvolvedor Full Stack no futuro.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Seção de Projetos Selecionados -->
+<section class="featured-projects" id="projects">
+    <div class="container">
+      <h2>
+        <span class="gradient-text">Projetos</span> <br />
+        
+      </h2>
+      <p class="projects-intro">
+        Projetos que fiz ou participei 
+      </p>
+  
+      <!-- Grid de projetos -->
+      <div class="projects-list">
+        <!-- Card 1 -->
+        <div class="project-card">
+          <div class="project-img">
+            <!-- Substitua a URL da imagem abaixo pela do seu servidor/imagem local -->
+            <h3>Site Web</h3>
+            <img src="siteweb.png" alt="Projeto 1" />
+          </div>
+          
+          <h3>Meu Portifólio</h3>
+          <p class="project-info">
+            Este site foi desenvolvido para apresentar meu portfólio e demonstrar meu conhecimento em desenvolvimento.
+             <br />
+            
+          </p>
+          <a href="#" class="btn-project">Ver Projeto</a>
+        </div>
+        <div class="project-card">
+            <div class="project-img">
+              <!-- Substitua a URL da imagem abaixo pela do seu servidor/imagem local -->
+              <h3>Análise De Dados</h3>
+              <img src="alanise-credito.png" alt="Projeto 2" />
+            </div>
+            
+            <h3>Análise De Crédito</h3>
+            <p class="project-info">
+                Um projeto completo de Machine Learning, da definição do problema, passando pela Análise Exploratória dos Dados <br />
+                tratamento, geração do modelo.
+            </p>
+            <a href="#" class="btn-project">Ver Projeto</a>
+          </div>
+          
+    </div>
+  </section>
+  <!-- Seção Conhecimentos -->
+<section class="conhecimentos" id="conhecimentos">
+    <div class="container">
+      <h2>Conhecimentos</h2>
+      <div class="cards-conhecimentos">
+        <!-- Card 1: HTML5 -->
+        <div class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+            alt="Ícone HTML5"
+            class="icon-card"
+          />
+          <h3>HTML5</h3>
+          <p>
+            O HTML5 é a linguagem de marcação para construção de páginas
+            estruturadas na web, possibilitando criação de conteúdo semântico e
+            organizado.
+          </p>
+        </div>
+  
+        <!-- Card 2: CSS3 -->
+        <div class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+            alt="Ícone CSS3"
+            class="icon-card"
+          />
+          <h3>CSS3</h3>
+          <p>
+            O CSS3 é a linguagem de estilo que define a aparência e o design das
+            páginas, permitindo layouts responsivos, animações e efeitos visuais.
+          </p>
+        </div>
+  
+        <!-- Card 3: JavaScript -->
+        <div class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+            alt="Ícone JavaScript"
+            class="icon-card"
+          />
+          <h3>JavaScript</h3>
+          <p>
+            JavaScript é a linguagem de programação que adiciona interatividade e
+            dinamismo às páginas web, permitindo criação de aplicações complexas.
+          </p>
+        </div>
+  
+        <!-- Card 4: Python -->
+        <div class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+            alt="Ícone Python"
+            class="icon-card"
+          />
+          <h3>Python</h3>
+          <p>
+            Python é uma linguagem de programação de alto nível, conhecida pela
+            legibilidade e pela vasta gama de bibliotecas para desenvolvimento web,
+            data science, automação e muito mais.
+          </p>
+        </div>
+  
+        <!-- Card 5: SQL (Banco de Dados) -->
+        <div class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png"
+            alt="Ícone SQL"
+            class="icon-card"
+          />
+          <h3>SQL</h3>
+          <p>
+            SQL é a linguagem padrão para gerenciamento de bancos de dados
+            relacionais, permitindo consultas, manipulação e definição de dados de
+            forma eficiente.
+          </p>
+        </div>
+  
+        <!-- Card 6: C -->
+        <div class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png"
+            alt="Ícone C"
+            class="icon-card"
+          />
+          <h3>C</h3>
+          <p>
+            C é uma das linguagens de programação mais antigas e amplamente usadas,
+            conhecida por sua eficiência, portabilidade e uso em sistemas
+            embarcados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Seção Fale comigo -->
+  <section class="fale-comigo" id="contato">
+    <div class="container fale-comigo-content">
+      <div class="fale-comigo-text">
+        <h2 class="gradient-text" >Fale comigo!</h2>
+        <p>
+          Entre em contato para discutirmos oportunidades de trabalho, projetos ou
+          colaborações. Estou sempre aberto a novos desafios!
+        </p>
+        <ul class="contact-list">
+            <li><strong>WhatsApp:</strong> (31) 995825759</li>
+          <li><strong>Email:</strong> vinicius20208@gmail.com</li>
+        </ul>
+        <!-- Botão de WhatsApp, por exemplo -->
+        <a
+          href="https://wa.me/55000000000"
+          target="_blank"
+          class="btn-whatsapp"
+          >WhatsApp</a
+        >
+      </div>
+  
+      <div class="fale-comigo-image">
+        <!-- Substitua pela imagem real do smartphone ou qualquer mockup -->
+        <img
+          src="celular-2.png"
+          alt="Mockup de Smartphone"
+        />
+      </div>
+    </div>
+  </section>
+  <div class="linha-separadora"></div>
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>
+        <strong>Vinicius Almeida</strong> <br />
+        © 2025 - Todos os direitos reservados
+      </p>
+      <!-- Ícones de redes sociais (exemplo) -->
+      <div class="social-icons">
+        <!-- Substitua pelos links e ícones reais -->
+        
+        <a href="https://www.instagram.com/euovinicin" target="insta">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+            alt="Ícone do Instagram"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/vinicius-almeida-b06729216/" target="Linkedin">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+            alt="Ícone do LinkedIn"
+          />
+        </a>
+        <a href="https://github.com/euovinicius" target="github">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Ícone do GitHub" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+ 
+</body>
+</html>
