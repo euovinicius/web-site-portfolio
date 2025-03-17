@@ -1,15 +1,6 @@
-# Projeto: Análise de Crédito
-**Objetivo**: Verificar informações de um cliente e retornar se pode liberar ou não crédito para esse cliente com base em dados histórico de outros clientes. 
+# Projeto: Web Site Para Portfólio . 
+**Objetivo**: Este site foi desenvolvido para apresentar meu portfólio e demonstrar meu conhecimento em desenvolvimento.
 
-**Linguagem**: Python
+![image](https://github.com/user-attachments/assets/3634db9a-7123-4ae3-8298-470ca0fff419)
 
-**Fases:**
-- Definição do Problema
-- Preparação dos Dados (Tratamento de *Missing values*, seleção de *features*, categorização)
-- Criação do Modelo de *Machine Learning* (*Random Forest*, Avaliação de Métricas)
-- Colocando em Produção (Flask)
-
-
-
- ![image](https://github.com/user-attachments/assets/66e0819e-5d5b-421f-99b7-aec2db3f9b52)
 
